@@ -12,15 +12,13 @@ app.use(morgan('dev'));
 app.use(express.json());
 
 
-// Csmpsites Routes
+// Campsites Routes
 app.use('/campsites', campsiteRouter);
-app.use('/campsites/:campsiteId', campsiteRouter);
 // Promotions Routes
 app.use('/promotions', promotionsRouter);
-app.use('/promotions/:promotionId', promotionsRouter);
 //Partners Routes
 app.use('/partners', partnersRouter);
-app.use('/partners/:partnerId', partnersRouter);
+
 
 app.use(express.static(__dirname + '/public'));
 

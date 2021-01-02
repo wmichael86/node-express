@@ -28,7 +28,7 @@ partnersRouter.route('/:partnerId')
     next();
 })
 .get((req, res) => {
-    res.end(`Will send details of the promotion: ${req.params.partnerId} to you`);
+    res.end(`Will send details of the partner: ${req.params.partnerId} to you`);
 })
 .post((req, res) => {
     res.statusCode = 403;
